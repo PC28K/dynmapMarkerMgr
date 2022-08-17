@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>dynmapMarkerMgr</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./config_ln.js"></script>
+        <script src="./js/edit.js"></script>
+        <script src="./js/list.js"></script>
+    </head>
+    <body>
+        <div id="top">
+            <span class="url"></span>
+        </div>
+        <div id="body">
+            <div id="menu">
+                <div style="height: 10px;"></div>
+                <!--div class="onclick_blue blue" onClick="javascript:refresh();">
+                    <span class="Segoe">&#xE1CD;</span> 새로고침
+                </div-->
+                <div class="onclick_blue blue" onClick="javascript:newMarker();">
+                    <span class="Segoe">&#xE109;</span> 새 마커 만들기
+                </div>
+                <div class="onclick_blue blue" onClick="javascript:newSets();">
+                    <span class="Segoe">&#xE109;</span> 새 범주 만들기
+                </div>
+                <div style="height: 15px;"></div>
+                <div class="onclick_blue" style="font-size: 11px; height: 20px;">선택 마커를</div>
+                <div class="onclick_blue blue" onClick="javascript:editMarker();">
+                    <span class="Segoe">&#xE104;</span> 고치기
+                </div>
+                <div class="onclick_blue blue" onClick="javascript:deleteMarker();">
+                    <span class="Segoe">&#xE10A;</span> 지우기
+                </div>
+                <div class="onclick_blue blue" onClick="javascript:openDynmap();">
+                    <span class="Segoe">&#xE143;</span> 다이나믹맵에서 보기
+                </div>
+                <div style="height: 15px;"></div>
+                <div class="onclick_blue" style="font-size: 11px; height: 20px;">선택 마커의 범주를</div>
+                <div class="onclick_blue blue" onClick="javascript:editSets();">
+                    <span class="Segoe">&#xE104;</span> 고치기
+                </div>
+                <div class="onclick_blue blue" onClick="javascript:deleteSets();">
+                    <span class="Segoe">&#xE10A;</span> 지우기
+                </div>
+                <div style="height: 15px;"></div>
+                <div class="onclick_blue blue" onClick="javascript:mgrSets();">
+                    <span class="Segoe">&#xE12F;</span> 범주 목록
+                </div>
+            </div>
+            <div id="content">
+                <div class="onclick_blue_top blue" style="width: 70px" onclick="javascript:refresh('sets');">
+                    범주
+                </div>
+                <div class="onclick_blue_top blue" style="width: 70px" onclick="javascript:refresh('type');">
+                    종류
+                </div>
+                <div class="onclick_blue_top blue" style="width: 100px" onclick="javascript:refresh('key');">
+                    키
+                </div>
+                <div class="onclick_blue_top blue" style="width: 100px" onclick="javascript:refresh('icon');">
+                    아이콘
+                </div>
+                <div class="onclick_blue_top blue" style="width: 350px" onclick="javascript:refresh('label');">
+                    라벨
+                </div>
+                <div class="onclick_blue_top" style="width: 200px;">
+                    좌표
+                </div>
+                <div class="onclick_blue_top" style="width: 400px; border-right: unset;">
+                    
+                </div>
+                <div style="height: 5px;"></div>
+                <div id="result">
+
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            처리중
+        </div>
+    </body>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <script src="./js/onload.js"></script>
+</html>
