@@ -73,7 +73,7 @@ function newSetsApply(){
 }
 
 function editMarker(){
-	if(selected.length == 2){
+	if(selected.length == 2 && selected[1] != null){
 		$('#modal').css('display', 'block');
 		$.ajax({
 			url: `./html/modal_editMarker.html`,
@@ -203,7 +203,7 @@ function mgrSetsSelect(key, act){
 }
 
 function deleteMarker(){
-	if(selected.length == 2){
+	if(selected.length == 2 && selected[1] != null){
 		if(confirm(`${list[selected[1]].label} 마커를 지우시고 후회하시지는 않으시겠습니까?`)){
 			delete dynmapJSON.sets[list[selected[1]].sets][list[selected[1]].type][list[selected[1]].key];
 			
